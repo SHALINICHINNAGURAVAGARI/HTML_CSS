@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
+    <!--Demo of change method without passing function-->
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("input").change();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p>Click the button to see the changed value !!!</p>
+    <!--click on this button and see the change -->
+    <button>Click Me!</button>
+    <p>Enter value:
+        <input value="GeeksforGeeks" 
+               onchange="alert(this.value)" 
+               type="text">
+    </p>
+</body>
+
+</html>
