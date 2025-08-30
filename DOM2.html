@@ -1,0 +1,37 @@
+<html>
+<head>
+    <style>
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="example" class="bold">This is a text element with the "bold" class.</div>
+
+    <button onclick="addClass()">Add 'highlight' Class</button>
+    <button onclick="removeClass()">Remove 'bold' Class</button>
+    <button onclick="toggleClass()">Toggle 'highlight' Class</button>
+    <script>
+        function addClass() {
+            document.getElementById("example").classList.add("highlight");
+        }
+        function removeClass() {
+            document.getElementById("example").classList.remove("bold");
+        }
+        function toggleClass() {
+            document.getElementById("example").classList.toggle("highlight");
+        }
+    </script>
+</body>
+</html>
+
+<!-- // Changing multiple CSS properties
+document.getElementById("demo").style.color = "red";
+document.getElementById("demo").style.fontSize = "20px";
+// Adding more than one style
+document.getElementById("demo").style.cssText = "color: blue; font-size: 18px;"; -->
